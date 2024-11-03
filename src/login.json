@@ -1,0 +1,18 @@
+{
+  "$id": "/login.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["login", "password"],
+  "properties": {
+    "login": {
+      "type": "string",
+      "format": "email",
+      "errorMessage": "enter a valid email address"
+    },
+    "password": {
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 1024
+    }
+  }
+}
